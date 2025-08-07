@@ -1,0 +1,135 @@
+body {
+    overflow: hidden;
+    text-align: center;
+    margin: 0px;
+    font: bold large monospace;
+    height: 100vh;
+    color: rgb(7, 70, 7);
+    background: repeating-linear-gradient(320deg, #010, #010 15px, 0px, #131 30px);
+    display: flex;
+    flex-direction: row;
+}
+
+.scrollable-element {
+    border-top: 3px solid rgb(7, 70, 7);
+    border-bottom: 3px solid rgb(7, 70, 7);
+    margin: 0px;
+    overflow-y: scroll;
+    height: 81%;
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: #111;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #121;
+        border-radius: 6px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(7, 70, 7);
+    }
+}
+
+
+#homeColumn {
+padding: 0px 15px;
+    flex: 3;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-right: 3px solid rgb(7, 70, 7);
+    h1#home {
+        letter-spacing: 5px;
+        margin: 0px 7% 18px 7%;
+        border-radius: 0px 0px 50px 50px;
+        color: #010;
+        background-color: rgb(7, 70, 7);
+        padding: 15px 15px 25px 15px;
+    }
+    #StaticImageAudio {
+        border-radius: 50px;
+        border: 3px solid rgb(7, 70, 7);
+    }
+    #infoAboutMusic {
+        color: rgb(7, 70, 7);
+        margin: 0px;
+        font: bold 24px/1.5 monospace;
+    }   
+}
+
+#allAudioColumn {
+    background-color: rgba(0, 0, 0, 0.3);
+    flex: 7;
+    h1#topH {
+        padding: 17px 0px;
+        margin: 0px;
+        background-color: rgba(0, 63, 0, 0.5);
+        letter-spacing: 6px;
+        color: #000;
+    }
+}
+
+
+p.nameMusic {
+    color: #010;
+    margin: -33px 0px 10px 0px;
+}
+
+
+div#audioSideBar,
+div#allAudio {
+    audio {
+        margin-top: 15px;
+        width: 95%;
+        background-color: rgb(7, 70, 7);
+        padding: 10px 10px 35px 10px;
+        border-radius: 35px;
+    }
+
+    audio::-webkit-media-controls-volume-slider,
+    audio::-webkit-media-controls-mute-button {
+        display: none;
+    }
+
+    audio::-webkit-media-controls-current-time-display,
+    audio::-webkit-media-controls-time-remaining-display {
+        background-color: rgb(7, 70, 7);
+        color: #111;
+        border-radius: 15px;
+        display: inline;
+        margin: 0px 0px 0px 10px;
+        padding: 9px 10px;
+        border-radius: 35px;
+    }
+
+    audio::-webkit-media-controls-panel {
+        background-color: #111;
+        color: rgb(7, 70, 7);
+    }
+
+    audio::-webkit-media-controls-timeline {
+        background-color: rgb(7, 70, 7);
+        margin: 0px -25px 0px 10px;
+        padding: 14px;
+        border-radius: 20px;
+    }
+
+    audio::-webkit-media-controls-mute-button,
+    audio::-webkit-media-controls-play-button,
+    audio::-webkit-media-controls-pause-button {
+        background-color: rgb(7, 70, 7);
+        border-radius: 20px;
+    }
+}
+
+div#audioSideBar {
+    background-color: rgba(7, 70, 7, 0.4);
+    margin: 0px;
+    audio {
+        background-color: rgb(7, 70, 7);
+        padding: 5px;
+        margin: 8px 0px 10px 0px;
+    }
+}
